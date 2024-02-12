@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Veterinaria_FinalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Animales">
+          <Key>
+            <PropertyRef Name="ID_Animal" />
+          </Key>
+          <Property Name="ID_Animal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Fecha_Nacimiento" Type="date" />
+          <Property Name="ID_Especie" Type="int" />
+          <Property Name="ID_Raza" Type="int" />
+          <Property Name="ID_Sexo" Type="int" />
+          <Property Name="ID_Dueño_Cedula" Type="varchar" MaxLength="14" />
+          <Property Name="Est_Animal" Type="int" />
+        </EntityType>
+        <EntityType Name="Cita">
+          <Key>
+            <PropertyRef Name="ID_Citas" />
+          </Key>
+          <Property Name="ID_Citas" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha_Cita" Type="date" />
+          <Property Name="ID_Animal" Type="int" />
+          <Property Name="ID_Especialista_Cedula" Type="varchar" MaxLength="50" />
+          <Property Name="ID_Servicio" Type="int" />
+          <Property Name="Fecha_Hora" Type="time" Precision="0" />
+          <Property Name="Est_Cita" Type="bit" />
+          <Property Name="ID_Dueño_Cedula" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Dueño">
+          <Key>
+            <PropertyRef Name="ID_Dueño_Cedula" />
+          </Key>
+          <Property Name="ID_Dueño_Cedula" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="Nombre_Dueño" Type="varchar" MaxLength="20" />
+          <Property Name="Apellido_Dueño" Type="varchar" MaxLength="20" />
+          <Property Name="Dirección_Dueño" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono_Dueño" Type="varchar" MaxLength="50" />
+          <Property Name="Email_Dueño" Type="varchar" MaxLength="50" />
+          <Property Name="Est_Dueño" Type="int" />
+        </EntityType>
+        <EntityType Name="Especialista">
+          <Key>
+            <PropertyRef Name="ID_Especialista_Cedula" />
+          </Key>
+          <Property Name="ID_Especialista_Cedula" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Nombre_Espe" Type="varchar" MaxLength="20" />
+          <Property Name="Apellido_Espe" Type="varchar" MaxLength="20" />
+          <Property Name="Telefono_Espe" Type="varchar" MaxLength="50" />
+          <Property Name="Email_Espe" Type="varchar" MaxLength="50" />
+          <Property Name="Especialización_Espe" Type="varchar" MaxLength="50" />
+          <Property Name="Est_Espe" Type="int" />
+          <Property Name="ID_Servicio" Type="int" />
+        </EntityType>
+        <EntityType Name="Especialista_Horario">
+          <Key>
+            <PropertyRef Name="ID_Esp_Hora" />
+          </Key>
+          <Property Name="ID_Esp_Hora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Especialista_Cedula" Type="varchar" MaxLength="10" />
+          <Property Name="ID_Horario" Type="int" />
+        </EntityType>
+        <EntityType Name="Especie">
+          <Key>
+            <PropertyRef Name="ID_Especie" />
+          </Key>
+          <Property Name="ID_Especie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nom_Especie" Type="varchar" MaxLength="50" />
+          <Property Name="Est_Especie" Type="int" />
+        </EntityType>
+        <EntityType Name="Historial_Medico">
+          <Key>
+            <PropertyRef Name="ID_Historial" />
+          </Key>
+          <Property Name="ID_Historial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha_Historial" Type="date" />
+          <Property Name="Diagnostico" Type="varchar" MaxLength="50" />
+          <Property Name="Tratamiento" Type="varchar" MaxLength="200" />
+          <Property Name="Observaciones" Type="varchar" MaxLength="50" />
+          <Property Name="ID_Dueño_Cedula" Type="varchar" MaxLength="14" />
+          <Property Name="Est_Historial" Type="int" />
+          <Property Name="ID_Animal" Type="int" />
+        </EntityType>
+        <EntityType Name="Horario">
+          <Key>
+            <PropertyRef Name="ID_Horario" />
+          </Key>
+          <Property Name="ID_Horario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Cita" Type="int" />
+        </EntityType>
+        <EntityType Name="Raza">
+          <Key>
+            <PropertyRef Name="ID_Raza" />
+          </Key>
+          <Property Name="ID_Raza" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Raza" Type="varchar" MaxLength="50" />
+          <Property Name="Est_Raza" Type="int" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="ID_Servicio" />
+          </Key>
+          <Property Name="ID_Servicio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Serv" Type="varchar" MaxLength="20" />
+          <Property Name="Descripcion_Serv" Type="varchar" MaxLength="50" />
+          <Property Name="Est_Serv" Type="int" />
+        </EntityType>
+        <EntityType Name="Sexo">
+          <Key>
+            <PropertyRef Name="ID_Sexo" />
+          </Key>
+          <Property Name="ID_Sexo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sexo" Type="varchar" MaxLength="6" />
+          <Property Name="estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Animales_Dueño">
+          <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dueño">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Especie">
+          <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="ID_Especie" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Especie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Raza">
+          <End Role="Raza" Type="Self.Raza" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raza">
+              <PropertyRef Name="ID_Raza" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Raza" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Sexo">
+          <End Role="Sexo" Type="Self.Sexo" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sexo">
+              <PropertyRef Name="ID_Sexo" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Sexo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cita_Animales">
+          <End Role="Animales" Type="Self.Animales" Multiplicity="0..1" />
+          <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animales">
+              <PropertyRef Name="ID_Animal" />
+            </Principal>
+            <Dependent Role="Cita">
+              <PropertyRef Name="ID_Animal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cita_Servicios">
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Servicios">
+              <PropertyRef Name="ID_Servicio" />
+            </Principal>
+            <Dependent Role="Cita">
+              <PropertyRef Name="ID_Servicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Horario_Especialista">
+          <End Role="Especialista" Type="Self.Especialista" Multiplicity="0..1" />
+          <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especialista">
+              <PropertyRef Name="ID_Especialista_Cedula" />
+            </Principal>
+            <Dependent Role="Especialista_Horario">
+              <PropertyRef Name="ID_Especialista_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Horario_Horario">
+          <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
+          <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Horario">
+              <PropertyRef Name="ID_Horario" />
+            </Principal>
+            <Dependent Role="Especialista_Horario">
+              <PropertyRef Name="ID_Horario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Servicios">
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <End Role="Especialista" Type="Self.Especialista" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Servicios">
+              <PropertyRef Name="ID_Servicio" />
+            </Principal>
+            <Dependent Role="Especialista">
+              <PropertyRef Name="ID_Servicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Historial_Medico_Dueño">
+          <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+          <End Role="Historial_Medico" Type="Self.Historial_Medico" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dueño">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Principal>
+            <Dependent Role="Historial_Medico">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Veterinaria_FinalModelStoreContainer">
+          <EntitySet Name="Animales" EntityType="Self.Animales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cita" EntityType="Self.Cita" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dueño" EntityType="Self.Dueño" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Especialista" EntityType="Self.Especialista" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Especialista_Horario" EntityType="Self.Especialista_Horario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Especie" EntityType="Self.Especie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Historial_Medico" EntityType="Self.Historial_Medico" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Horario" EntityType="Self.Horario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Raza" EntityType="Self.Raza" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sexo" EntityType="Self.Sexo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Animales_Dueño" Association="Self.FK_Animales_Dueño">
+            <End Role="Dueño" EntitySet="Dueño" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Especie" Association="Self.FK_Animales_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Raza" Association="Self.FK_Animales_Raza">
+            <End Role="Raza" EntitySet="Raza" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Sexo" Association="Self.FK_Animales_Sexo">
+            <End Role="Sexo" EntitySet="Sexo" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cita_Animales" Association="Self.FK_Cita_Animales">
+            <End Role="Animales" EntitySet="Animales" />
+            <End Role="Cita" EntitySet="Cita" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cita_Servicios" Association="Self.FK_Cita_Servicios">
+            <End Role="Servicios" EntitySet="Servicios" />
+            <End Role="Cita" EntitySet="Cita" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Horario_Especialista" Association="Self.FK_Especialista_Horario_Especialista">
+            <End Role="Especialista" EntitySet="Especialista" />
+            <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Horario_Horario" Association="Self.FK_Especialista_Horario_Horario">
+            <End Role="Horario" EntitySet="Horario" />
+            <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Servicios" Association="Self.FK_Especialista_Servicios">
+            <End Role="Servicios" EntitySet="Servicios" />
+            <End Role="Especialista" EntitySet="Especialista" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Historial_Medico_Dueño" Association="Self.FK_Historial_Medico_Dueño">
+            <End Role="Dueño" EntitySet="Dueño" />
+            <End Role="Historial_Medico" EntitySet="Historial_Medico" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Veterinaria_FinalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Animales">
+          <Key>
+            <PropertyRef Name="ID_Animal" />
+          </Key>
+          <Property Name="ID_Animal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="0" />
+          <Property Name="ID_Especie" Type="Int32" />
+          <Property Name="ID_Raza" Type="Int32" />
+          <Property Name="ID_Sexo" Type="Int32" />
+          <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Animal" Type="Int32" />
+          <NavigationProperty Name="Dueño" Relationship="Self.FK_Animales_Dueño" FromRole="Animales" ToRole="Dueño" />
+          <NavigationProperty Name="Especie" Relationship="Self.FK_Animales_Especie" FromRole="Animales" ToRole="Especie" />
+          <NavigationProperty Name="Raza" Relationship="Self.FK_Animales_Raza" FromRole="Animales" ToRole="Raza" />
+          <NavigationProperty Name="Sexo" Relationship="Self.FK_Animales_Sexo" FromRole="Animales" ToRole="Sexo" />
+          <NavigationProperty Name="Cita" Relationship="Self.FK_Cita_Animales" FromRole="Animales" ToRole="Cita" />
+        </EntityType>
+        <EntityType Name="Cita">
+          <Key>
+            <PropertyRef Name="ID_Citas" />
+          </Key>
+          <Property Name="ID_Citas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Cita" Type="DateTime" Precision="0" />
+          <Property Name="ID_Animal" Type="Int32" />
+          <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Servicio" Type="Int32" />
+          <Property Name="Fecha_Hora" Type="Time" Precision="0" />
+          <Property Name="Est_Cita" Type="Boolean" />
+          <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Animales" Relationship="Self.FK_Cita_Animales" FromRole="Cita" ToRole="Animales" />
+          <NavigationProperty Name="Servicios" Relationship="Self.FK_Cita_Servicios" FromRole="Cita" ToRole="Servicios" />
+        </EntityType>
+        <EntityType Name="Dueño">
+          <Key>
+            <PropertyRef Name="ID_Dueño_Cedula" />
+          </Key>
+          <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre_Dueño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido_Dueño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Dirección_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Dueño" Type="Int32" />
+          <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Dueño" FromRole="Dueño" ToRole="Animales" />
+          <NavigationProperty Name="Historial_Medico" Relationship="Self.FK_Historial_Medico_Dueño" FromRole="Dueño" ToRole="Historial_Medico" />
+        </EntityType>
+        <EntityType Name="Especialista">
+          <Key>
+            <PropertyRef Name="ID_Especialista_Cedula" />
+          </Key>
+          <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre_Espe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido_Espe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Especialización_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Espe" Type="Int32" />
+          <Property Name="ID_Servicio" Type="Int32" />
+          <NavigationProperty Name="Especialista_Horario" Relationship="Self.FK_Especialista_Horario_Especialista" FromRole="Especialista" ToRole="Especialista_Horario" />
+          <NavigationProperty Name="Servicios" Relationship="Self.FK_Especialista_Servicios" FromRole="Especialista" ToRole="Servicios" />
+        </EntityType>
+        <EntityType Name="Especialista_Horario">
+          <Key>
+            <PropertyRef Name="ID_Esp_Hora" />
+          </Key>
+          <Property Name="ID_Esp_Hora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Horario" Type="Int32" />
+          <NavigationProperty Name="Especialista" Relationship="Self.FK_Especialista_Horario_Especialista" FromRole="Especialista_Horario" ToRole="Especialista" />
+          <NavigationProperty Name="Horario" Relationship="Self.FK_Especialista_Horario_Horario" FromRole="Especialista_Horario" ToRole="Horario" />
+        </EntityType>
+        <EntityType Name="Especie">
+          <Key>
+            <PropertyRef Name="ID_Especie" />
+          </Key>
+          <Property Name="ID_Especie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom_Especie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Especie" Type="Int32" />
+          <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Especie" FromRole="Especie" ToRole="Animales" />
+        </EntityType>
+        <EntityType Name="Historial_Medico">
+          <Key>
+            <PropertyRef Name="ID_Historial" />
+          </Key>
+          <Property Name="ID_Historial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Historial" Type="DateTime" Precision="0" />
+          <Property Name="Diagnostico" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tratamiento" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Historial" Type="Int32" />
+          <Property Name="ID_Animal" Type="Int32" />
+          <NavigationProperty Name="Dueño" Relationship="Self.FK_Historial_Medico_Dueño" FromRole="Historial_Medico" ToRole="Dueño" />
+        </EntityType>
+        <EntityType Name="Horario">
+          <Key>
+            <PropertyRef Name="ID_Horario" />
+          </Key>
+          <Property Name="ID_Horario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Cita" Type="Int32" />
+          <NavigationProperty Name="Especialista_Horario" Relationship="Self.FK_Especialista_Horario_Horario" FromRole="Horario" ToRole="Especialista_Horario" />
+        </EntityType>
+        <EntityType Name="Raza">
+          <Key>
+            <PropertyRef Name="ID_Raza" />
+          </Key>
+          <Property Name="ID_Raza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Raza" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Raza" Type="Int32" />
+          <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Raza" FromRole="Raza" ToRole="Animales" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="ID_Servicio" />
+          </Key>
+          <Property Name="ID_Servicio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Serv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion_Serv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Est_Serv" Type="Int32" />
+          <NavigationProperty Name="Cita" Relationship="Self.FK_Cita_Servicios" FromRole="Servicios" ToRole="Cita" />
+          <NavigationProperty Name="Especialista" Relationship="Self.FK_Especialista_Servicios" FromRole="Servicios" ToRole="Especialista" />
+        </EntityType>
+        <EntityType Name="Sexo">
+          <Key>
+            <PropertyRef Name="ID_Sexo" />
+          </Key>
+          <Property Name="ID_Sexo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sexo1" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Sexo" FromRole="Sexo" ToRole="Animales" />
+          <Property Name="estado" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Animales_Dueño">
+          <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dueño">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Especie">
+          <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="ID_Especie" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Especie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Raza">
+          <End Role="Raza" Type="Self.Raza" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Raza">
+              <PropertyRef Name="ID_Raza" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Raza" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animales_Sexo">
+          <End Role="Sexo" Type="Self.Sexo" Multiplicity="0..1" />
+          <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sexo">
+              <PropertyRef Name="ID_Sexo" />
+            </Principal>
+            <Dependent Role="Animales">
+              <PropertyRef Name="ID_Sexo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cita_Animales">
+          <End Role="Animales" Type="Self.Animales" Multiplicity="0..1" />
+          <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animales">
+              <PropertyRef Name="ID_Animal" />
+            </Principal>
+            <Dependent Role="Cita">
+              <PropertyRef Name="ID_Animal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cita_Servicios">
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Servicios">
+              <PropertyRef Name="ID_Servicio" />
+            </Principal>
+            <Dependent Role="Cita">
+              <PropertyRef Name="ID_Servicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Historial_Medico_Dueño">
+          <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+          <End Role="Historial_Medico" Type="Self.Historial_Medico" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dueño">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Principal>
+            <Dependent Role="Historial_Medico">
+              <PropertyRef Name="ID_Dueño_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Horario_Especialista">
+          <End Role="Especialista" Type="Self.Especialista" Multiplicity="0..1" />
+          <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especialista">
+              <PropertyRef Name="ID_Especialista_Cedula" />
+            </Principal>
+            <Dependent Role="Especialista_Horario">
+              <PropertyRef Name="ID_Especialista_Cedula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Servicios">
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <End Role="Especialista" Type="Self.Especialista" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Servicios">
+              <PropertyRef Name="ID_Servicio" />
+            </Principal>
+            <Dependent Role="Especialista">
+              <PropertyRef Name="ID_Servicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Especialista_Horario_Horario">
+          <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
+          <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Horario">
+              <PropertyRef Name="ID_Horario" />
+            </Principal>
+            <Dependent Role="Especialista_Horario">
+              <PropertyRef Name="ID_Horario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Veterinaria_FinalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Animales" EntityType="Self.Animales" />
+          <EntitySet Name="Cita" EntityType="Self.Cita" />
+          <EntitySet Name="Dueño" EntityType="Self.Dueño" />
+          <EntitySet Name="Especialista" EntityType="Self.Especialista" />
+          <EntitySet Name="Especialista_Horario" EntityType="Self.Especialista_Horario" />
+          <EntitySet Name="Especie" EntityType="Self.Especie" />
+          <EntitySet Name="Historial_Medico" EntityType="Self.Historial_Medico" />
+          <EntitySet Name="Horario" EntityType="Self.Horario" />
+          <EntitySet Name="Raza" EntityType="Self.Raza" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+          <EntitySet Name="Sexo" EntityType="Self.Sexo" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <AssociationSet Name="FK_Animales_Dueño" Association="Self.FK_Animales_Dueño">
+            <End Role="Dueño" EntitySet="Dueño" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Especie" Association="Self.FK_Animales_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Raza" Association="Self.FK_Animales_Raza">
+            <End Role="Raza" EntitySet="Raza" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animales_Sexo" Association="Self.FK_Animales_Sexo">
+            <End Role="Sexo" EntitySet="Sexo" />
+            <End Role="Animales" EntitySet="Animales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cita_Animales" Association="Self.FK_Cita_Animales">
+            <End Role="Animales" EntitySet="Animales" />
+            <End Role="Cita" EntitySet="Cita" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cita_Servicios" Association="Self.FK_Cita_Servicios">
+            <End Role="Servicios" EntitySet="Servicios" />
+            <End Role="Cita" EntitySet="Cita" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Historial_Medico_Dueño" Association="Self.FK_Historial_Medico_Dueño">
+            <End Role="Dueño" EntitySet="Dueño" />
+            <End Role="Historial_Medico" EntitySet="Historial_Medico" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Horario_Especialista" Association="Self.FK_Especialista_Horario_Especialista">
+            <End Role="Especialista" EntitySet="Especialista" />
+            <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Servicios" Association="Self.FK_Especialista_Servicios">
+            <End Role="Servicios" EntitySet="Servicios" />
+            <End Role="Especialista" EntitySet="Especialista" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Especialista_Horario_Horario" Association="Self.FK_Especialista_Horario_Horario">
+            <End Role="Horario" EntitySet="Horario" />
+            <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Veterinaria_FinalModelStoreContainer" CdmEntityContainer="Veterinaria_FinalEntities">
+          <EntitySetMapping Name="Animales">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Animales">
+              <MappingFragment StoreEntitySet="Animales">
+                <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+                <ScalarProperty Name="ID_Especie" ColumnName="ID_Especie" />
+                <ScalarProperty Name="ID_Raza" ColumnName="ID_Raza" />
+                <ScalarProperty Name="ID_Sexo" ColumnName="ID_Sexo" />
+                <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+                <ScalarProperty Name="Est_Animal" ColumnName="Est_Animal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cita">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Cita">
+              <MappingFragment StoreEntitySet="Cita">
+                <ScalarProperty Name="ID_Citas" ColumnName="ID_Citas" />
+                <ScalarProperty Name="Fecha_Cita" ColumnName="Fecha_Cita" />
+                <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+                <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+                <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+                <ScalarProperty Name="Fecha_Hora" ColumnName="Fecha_Hora" />
+                <ScalarProperty Name="Est_Cita" ColumnName="Est_Cita" />
+                <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dueño">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Dueño">
+              <MappingFragment StoreEntitySet="Dueño">
+                <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+                <ScalarProperty Name="Nombre_Dueño" ColumnName="Nombre_Dueño" />
+                <ScalarProperty Name="Apellido_Dueño" ColumnName="Apellido_Dueño" />
+                <ScalarProperty Name="Dirección_Dueño" ColumnName="Dirección_Dueño" />
+                <ScalarProperty Name="Telefono_Dueño" ColumnName="Telefono_Dueño" />
+                <ScalarProperty Name="Email_Dueño" ColumnName="Email_Dueño" />
+                <ScalarProperty Name="Est_Dueño" ColumnName="Est_Dueño" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Especialista">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especialista">
+              <MappingFragment StoreEntitySet="Especialista">
+                <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+                <ScalarProperty Name="Nombre_Espe" ColumnName="Nombre_Espe" />
+                <ScalarProperty Name="Apellido_Espe" ColumnName="Apellido_Espe" />
+                <ScalarProperty Name="Telefono_Espe" ColumnName="Telefono_Espe" />
+                <ScalarProperty Name="Email_Espe" ColumnName="Email_Espe" />
+                <ScalarProperty Name="Especialización_Espe" ColumnName="Especialización_Espe" />
+                <ScalarProperty Name="Est_Espe" ColumnName="Est_Espe" />
+                <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Especialista_Horario">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especialista_Horario">
+              <MappingFragment StoreEntitySet="Especialista_Horario">
+                <ScalarProperty Name="ID_Esp_Hora" ColumnName="ID_Esp_Hora" />
+                <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+                <ScalarProperty Name="ID_Horario" ColumnName="ID_Horario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Especie">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especie">
+              <MappingFragment StoreEntitySet="Especie">
+                <ScalarProperty Name="ID_Especie" ColumnName="ID_Especie" />
+                <ScalarProperty Name="Nom_Especie" ColumnName="Nom_Especie" />
+                <ScalarProperty Name="Est_Especie" ColumnName="Est_Especie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Historial_Medico">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Historial_Medico">
+              <MappingFragment StoreEntitySet="Historial_Medico">
+                <ScalarProperty Name="ID_Historial" ColumnName="ID_Historial" />
+                <ScalarProperty Name="Fecha_Historial" ColumnName="Fecha_Historial" />
+                <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+                <ScalarProperty Name="Tratamiento" ColumnName="Tratamiento" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+                <ScalarProperty Name="Est_Historial" ColumnName="Est_Historial" />
+                <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Horario">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Horario">
+              <MappingFragment StoreEntitySet="Horario">
+                <ScalarProperty Name="ID_Horario" ColumnName="ID_Horario" />
+                <ScalarProperty Name="ID_Cita" ColumnName="ID_Cita" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Raza">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Raza">
+              <MappingFragment StoreEntitySet="Raza">
+                <ScalarProperty Name="ID_Raza" ColumnName="ID_Raza" />
+                <ScalarProperty Name="Nombre_Raza" ColumnName="Nombre_Raza" />
+                <ScalarProperty Name="Est_Raza" ColumnName="Est_Raza" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servicios">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Servicios">
+              <MappingFragment StoreEntitySet="Servicios">
+                <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+                <ScalarProperty Name="Nombre_Serv" ColumnName="Nombre_Serv" />
+                <ScalarProperty Name="Descripcion_Serv" ColumnName="Descripcion_Serv" />
+                <ScalarProperty Name="Est_Serv" ColumnName="Est_Serv" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sexo">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.Sexo">
+              <MappingFragment StoreEntitySet="Sexo">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="ID_Sexo" ColumnName="ID_Sexo" />
+                <ScalarProperty Name="Sexo1" ColumnName="Sexo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Veterinaria_FinalModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

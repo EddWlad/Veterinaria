@@ -1,0 +1,24 @@
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\obj\Debug\DominioModelo.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\obj\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioModelo\obj\Debug\DominioModelo.pdb
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\bin\Debug\DominioModelo.dll
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\bin\Debug\DominioModelo.pdb
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\obj\Debug\DominioModelo.csproj.AssemblyReference.cache
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\obj\Debug\DominioModelo.dll
+C:\Desarrollo\veterinaria\UI.Windows\DominioModelo\obj\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\obj\Debug\DominioModelo.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\obj\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioModelo\obj\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\bin\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\bin\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.pdb

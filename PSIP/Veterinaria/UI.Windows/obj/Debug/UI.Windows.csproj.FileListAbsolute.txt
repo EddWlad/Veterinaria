@@ -1,0 +1,131 @@
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormEspec.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Properties.Resources.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.csproj.GenerateResource.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\UI.Windows.exe.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\UI.Windows.exe
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\UI.Windows.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\EntityFramework.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\AccesoDatos.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\Aplicación.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\EntityFramework.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\AccesoDatos.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\bin\Debug\AccesoDatos.dll.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.csproj.CopyComplete
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.exe
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.v.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormAnimales.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormDueño.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.Raza.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormSexo.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormHistorialMedico.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.FormServicios.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\UI.Windows\obj\Debug\UI.Windows.Formularios.GlamourPets.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.csproj.AssemblyReference.cache
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.exe
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\UI.Windows.exe.config
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\UI.Windows.exe
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\UI.Windows.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\Aplicación.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\DominioModelo.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\DominioServicio.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\EntityFramework.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\AccesoDatos.dll
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\Aplicación.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\DominioModelo.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\DominioServicio.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\EntityFramework.xml
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\AccesoDatos.pdb
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\bin\Debug\AccesoDatos.dll.config
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormAnimales.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormCita.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormDueño.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormEspec.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.v.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormHistorialMedico.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormServicios.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.FormSexo.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.GlamourPets.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.GlamourPetsEC.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Formularios.Raza.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.Properties.Resources.resources
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.csproj.GenerateResource.cache
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.csproj.CoreCompileInputs.cache
+C:\Desarrollo\veterinaria\UI.Windows\UI.Windows\obj\Debug\UI.Windows.csproj.CopyComplete
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\VeterinariaCitas.exe.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\VeterinariaCitas.exe
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\VeterinariaCitas.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\EntityFramework.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\AccesoDatos.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\Aplicación.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\EntityFramework.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\AccesoDatos.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\bin\Debug\AccesoDatos.dll.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormAnimales.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormCita.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormDueño.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormEspec.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.v.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormHistorialMedico.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.FormServicios.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.GlamourPets.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.GlamourPetsEC.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Formularios.Raza.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.Properties.Resources.resources
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.csproj.GenerateResource.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\UI.Windows.csproj.CopyComplete
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\VeterinariaCitas.exe
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\UI.Windows\obj\Debug\VeterinariaCitas.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\VeterinariaCitas.exe.config
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\VeterinariaCitas.exe
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\VeterinariaCitas.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\Aplicación.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\DominioServicio.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\EntityFramework.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\AccesoDatos.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\Aplicación.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\DominioServicio.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\EntityFramework.xml
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\AccesoDatos.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\bin\Debug\AccesoDatos.dll.config
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormAnimales.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormCita.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormDueño.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormEspec.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.v.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormHistorialMedico.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FormServicios.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.FrmGlamourPetEC.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Formularios.Raza.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\UI.Windows.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\VeterinariaCitas.exe
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\UI.Windows\obj\Debug\VeterinariaCitas.pdb

@@ -1,0 +1,18 @@
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\obj\Debug\DominioServicio.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\obj\Debug\DominioServicio.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\obj\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\DominioServicio\obj\Debug\DominioServicio.pdb
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\bin\Debug\DominioServicio.dll
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\bin\Debug\DominioServicio.pdb
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\obj\Debug\DominioServicio.csproj.AssemblyReference.cache
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\obj\Debug\DominioServicio.csproj.CoreCompileInputs.cache
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\obj\Debug\DominioServicio.dll
+C:\Desarrollo\veterinaria\UI.Windows\DominioServicio\obj\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\obj\Debug\DominioServicio.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\obj\Debug\DominioServicio.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\obj\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\DominioServicio\obj\Debug\DominioServicio.pdb

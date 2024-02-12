@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Veterinaria_FinalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Animales">
+    <Key>
+      <PropertyRef Name="ID_Animal" />
+    </Key>
+    <Property Name="ID_Animal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="ID_Especie" Type="Int32" />
+    <Property Name="ID_Raza" Type="Int32" />
+    <Property Name="ID_Sexo" Type="Int32" />
+    <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Animal" Type="Int32" />
+    <NavigationProperty Name="Dueño" Relationship="Self.FK_Animales_Dueño" FromRole="Animales" ToRole="Dueño" />
+    <NavigationProperty Name="Especie" Relationship="Self.FK_Animales_Especie" FromRole="Animales" ToRole="Especie" />
+    <NavigationProperty Name="Raza" Relationship="Self.FK_Animales_Raza" FromRole="Animales" ToRole="Raza" />
+    <NavigationProperty Name="Sexo" Relationship="Self.FK_Animales_Sexo" FromRole="Animales" ToRole="Sexo" />
+    <NavigationProperty Name="Cita" Relationship="Self.FK_Cita_Animales" FromRole="Animales" ToRole="Cita" />
+  </EntityType>
+  <EntityType Name="Cita">
+    <Key>
+      <PropertyRef Name="ID_Citas" />
+    </Key>
+    <Property Name="ID_Citas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Cita" Type="DateTime" Precision="0" />
+    <Property Name="ID_Animal" Type="Int32" />
+    <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Servicio" Type="Int32" />
+    <Property Name="Fecha_Hora" Type="Time" Precision="0" />
+    <Property Name="Est_Cita" Type="Boolean" />
+    <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Animales" Relationship="Self.FK_Cita_Animales" FromRole="Cita" ToRole="Animales" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK_Cita_Servicios" FromRole="Cita" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Dueño">
+    <Key>
+      <PropertyRef Name="ID_Dueño_Cedula" />
+    </Key>
+    <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre_Dueño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido_Dueño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Dirección_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Dueño" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Dueño" Type="Int32" />
+    <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Dueño" FromRole="Dueño" ToRole="Animales" />
+    <NavigationProperty Name="Historial_Medico" Relationship="Self.FK_Historial_Medico_Dueño" FromRole="Dueño" ToRole="Historial_Medico" />
+  </EntityType>
+  <EntityType Name="Especialista">
+    <Key>
+      <PropertyRef Name="ID_Especialista_Cedula" />
+    </Key>
+    <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre_Espe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido_Espe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Especialización_Espe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Espe" Type="Int32" />
+    <Property Name="ID_Servicio" Type="Int32" />
+    <NavigationProperty Name="Especialista_Horario" Relationship="Self.FK_Especialista_Horario_Especialista" FromRole="Especialista" ToRole="Especialista_Horario" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK_Especialista_Servicios" FromRole="Especialista" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Especialista_Horario">
+    <Key>
+      <PropertyRef Name="ID_Esp_Hora" />
+    </Key>
+    <Property Name="ID_Esp_Hora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Especialista_Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Horario" Type="Int32" />
+    <NavigationProperty Name="Especialista" Relationship="Self.FK_Especialista_Horario_Especialista" FromRole="Especialista_Horario" ToRole="Especialista" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK_Especialista_Horario_Horario" FromRole="Especialista_Horario" ToRole="Horario" />
+  </EntityType>
+  <EntityType Name="Especie">
+    <Key>
+      <PropertyRef Name="ID_Especie" />
+    </Key>
+    <Property Name="ID_Especie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Especie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Especie" Type="Int32" />
+    <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Especie" FromRole="Especie" ToRole="Animales" />
+  </EntityType>
+  <EntityType Name="Historial_Medico">
+    <Key>
+      <PropertyRef Name="ID_Historial" />
+    </Key>
+    <Property Name="ID_Historial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Historial" Type="DateTime" Precision="0" />
+    <Property Name="Diagnostico" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tratamiento" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Dueño_Cedula" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Historial" Type="Int32" />
+    <Property Name="ID_Animal" Type="Int32" />
+    <NavigationProperty Name="Dueño" Relationship="Self.FK_Historial_Medico_Dueño" FromRole="Historial_Medico" ToRole="Dueño" />
+  </EntityType>
+  <EntityType Name="Horario">
+    <Key>
+      <PropertyRef Name="ID_Horario" />
+    </Key>
+    <Property Name="ID_Horario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Cita" Type="Int32" />
+    <NavigationProperty Name="Especialista_Horario" Relationship="Self.FK_Especialista_Horario_Horario" FromRole="Horario" ToRole="Especialista_Horario" />
+  </EntityType>
+  <EntityType Name="Raza">
+    <Key>
+      <PropertyRef Name="ID_Raza" />
+    </Key>
+    <Property Name="ID_Raza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Raza" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Raza" Type="Int32" />
+    <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Raza" FromRole="Raza" ToRole="Animales" />
+  </EntityType>
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="ID_Servicio" />
+    </Key>
+    <Property Name="ID_Servicio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Serv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion_Serv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Serv" Type="Int32" />
+    <NavigationProperty Name="Cita" Relationship="Self.FK_Cita_Servicios" FromRole="Servicios" ToRole="Cita" />
+    <NavigationProperty Name="Especialista" Relationship="Self.FK_Especialista_Servicios" FromRole="Servicios" ToRole="Especialista" />
+  </EntityType>
+  <EntityType Name="Sexo">
+    <Key>
+      <PropertyRef Name="ID_Sexo" />
+    </Key>
+    <Property Name="ID_Sexo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sexo1" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Animales" Relationship="Self.FK_Animales_Sexo" FromRole="Sexo" ToRole="Animales" />
+    <Property Name="estado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Animales_Dueño">
+    <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+    <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dueño">
+        <PropertyRef Name="ID_Dueño_Cedula" />
+      </Principal>
+      <Dependent Role="Animales">
+        <PropertyRef Name="ID_Dueño_Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Animales_Especie">
+    <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+    <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especie">
+        <PropertyRef Name="ID_Especie" />
+      </Principal>
+      <Dependent Role="Animales">
+        <PropertyRef Name="ID_Especie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Animales_Raza">
+    <End Role="Raza" Type="Self.Raza" Multiplicity="0..1" />
+    <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Raza">
+        <PropertyRef Name="ID_Raza" />
+      </Principal>
+      <Dependent Role="Animales">
+        <PropertyRef Name="ID_Raza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Animales_Sexo">
+    <End Role="Sexo" Type="Self.Sexo" Multiplicity="0..1" />
+    <End Role="Animales" Type="Self.Animales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexo">
+        <PropertyRef Name="ID_Sexo" />
+      </Principal>
+      <Dependent Role="Animales">
+        <PropertyRef Name="ID_Sexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cita_Animales">
+    <End Role="Animales" Type="Self.Animales" Multiplicity="0..1" />
+    <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animales">
+        <PropertyRef Name="ID_Animal" />
+      </Principal>
+      <Dependent Role="Cita">
+        <PropertyRef Name="ID_Animal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cita_Servicios">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+    <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="ID_Servicio" />
+      </Principal>
+      <Dependent Role="Cita">
+        <PropertyRef Name="ID_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Historial_Medico_Dueño">
+    <End Role="Dueño" Type="Self.Dueño" Multiplicity="0..1" />
+    <End Role="Historial_Medico" Type="Self.Historial_Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dueño">
+        <PropertyRef Name="ID_Dueño_Cedula" />
+      </Principal>
+      <Dependent Role="Historial_Medico">
+        <PropertyRef Name="ID_Dueño_Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especialista_Horario_Especialista">
+    <End Role="Especialista" Type="Self.Especialista" Multiplicity="0..1" />
+    <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialista">
+        <PropertyRef Name="ID_Especialista_Cedula" />
+      </Principal>
+      <Dependent Role="Especialista_Horario">
+        <PropertyRef Name="ID_Especialista_Cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especialista_Servicios">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+    <End Role="Especialista" Type="Self.Especialista" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="ID_Servicio" />
+      </Principal>
+      <Dependent Role="Especialista">
+        <PropertyRef Name="ID_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especialista_Horario_Horario">
+    <End Role="Horario" Type="Self.Horario" Multiplicity="0..1" />
+    <End Role="Especialista_Horario" Type="Self.Especialista_Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Horario">
+        <PropertyRef Name="ID_Horario" />
+      </Principal>
+      <Dependent Role="Especialista_Horario">
+        <PropertyRef Name="ID_Horario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Veterinaria_FinalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Animales" EntityType="Self.Animales" />
+    <EntitySet Name="Cita" EntityType="Self.Cita" />
+    <EntitySet Name="Dueño" EntityType="Self.Dueño" />
+    <EntitySet Name="Especialista" EntityType="Self.Especialista" />
+    <EntitySet Name="Especialista_Horario" EntityType="Self.Especialista_Horario" />
+    <EntitySet Name="Especie" EntityType="Self.Especie" />
+    <EntitySet Name="Historial_Medico" EntityType="Self.Historial_Medico" />
+    <EntitySet Name="Horario" EntityType="Self.Horario" />
+    <EntitySet Name="Raza" EntityType="Self.Raza" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+    <EntitySet Name="Sexo" EntityType="Self.Sexo" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_Animales_Dueño" Association="Self.FK_Animales_Dueño">
+      <End Role="Dueño" EntitySet="Dueño" />
+      <End Role="Animales" EntitySet="Animales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Animales_Especie" Association="Self.FK_Animales_Especie">
+      <End Role="Especie" EntitySet="Especie" />
+      <End Role="Animales" EntitySet="Animales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Animales_Raza" Association="Self.FK_Animales_Raza">
+      <End Role="Raza" EntitySet="Raza" />
+      <End Role="Animales" EntitySet="Animales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Animales_Sexo" Association="Self.FK_Animales_Sexo">
+      <End Role="Sexo" EntitySet="Sexo" />
+      <End Role="Animales" EntitySet="Animales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cita_Animales" Association="Self.FK_Cita_Animales">
+      <End Role="Animales" EntitySet="Animales" />
+      <End Role="Cita" EntitySet="Cita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cita_Servicios" Association="Self.FK_Cita_Servicios">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="Cita" EntitySet="Cita" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Historial_Medico_Dueño" Association="Self.FK_Historial_Medico_Dueño">
+      <End Role="Dueño" EntitySet="Dueño" />
+      <End Role="Historial_Medico" EntitySet="Historial_Medico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especialista_Horario_Especialista" Association="Self.FK_Especialista_Horario_Especialista">
+      <End Role="Especialista" EntitySet="Especialista" />
+      <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especialista_Servicios" Association="Self.FK_Especialista_Servicios">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="Especialista" EntitySet="Especialista" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especialista_Horario_Horario" Association="Self.FK_Especialista_Horario_Horario">
+      <End Role="Horario" EntitySet="Horario" />
+      <End Role="Especialista_Horario" EntitySet="Especialista_Horario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Veterinaria_FinalModelStoreContainer" CdmEntityContainer="Veterinaria_FinalEntities">
+    <EntitySetMapping Name="Animales">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Animales">
+        <MappingFragment StoreEntitySet="Animales">
+          <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+          <ScalarProperty Name="ID_Especie" ColumnName="ID_Especie" />
+          <ScalarProperty Name="ID_Raza" ColumnName="ID_Raza" />
+          <ScalarProperty Name="ID_Sexo" ColumnName="ID_Sexo" />
+          <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+          <ScalarProperty Name="Est_Animal" ColumnName="Est_Animal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cita">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Cita">
+        <MappingFragment StoreEntitySet="Cita">
+          <ScalarProperty Name="ID_Citas" ColumnName="ID_Citas" />
+          <ScalarProperty Name="Fecha_Cita" ColumnName="Fecha_Cita" />
+          <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+          <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+          <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+          <ScalarProperty Name="Fecha_Hora" ColumnName="Fecha_Hora" />
+          <ScalarProperty Name="Est_Cita" ColumnName="Est_Cita" />
+          <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dueño">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Dueño">
+        <MappingFragment StoreEntitySet="Dueño">
+          <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+          <ScalarProperty Name="Nombre_Dueño" ColumnName="Nombre_Dueño" />
+          <ScalarProperty Name="Apellido_Dueño" ColumnName="Apellido_Dueño" />
+          <ScalarProperty Name="Dirección_Dueño" ColumnName="Dirección_Dueño" />
+          <ScalarProperty Name="Telefono_Dueño" ColumnName="Telefono_Dueño" />
+          <ScalarProperty Name="Email_Dueño" ColumnName="Email_Dueño" />
+          <ScalarProperty Name="Est_Dueño" ColumnName="Est_Dueño" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especialista">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especialista">
+        <MappingFragment StoreEntitySet="Especialista">
+          <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+          <ScalarProperty Name="Nombre_Espe" ColumnName="Nombre_Espe" />
+          <ScalarProperty Name="Apellido_Espe" ColumnName="Apellido_Espe" />
+          <ScalarProperty Name="Telefono_Espe" ColumnName="Telefono_Espe" />
+          <ScalarProperty Name="Email_Espe" ColumnName="Email_Espe" />
+          <ScalarProperty Name="Especialización_Espe" ColumnName="Especialización_Espe" />
+          <ScalarProperty Name="Est_Espe" ColumnName="Est_Espe" />
+          <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especialista_Horario">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especialista_Horario">
+        <MappingFragment StoreEntitySet="Especialista_Horario">
+          <ScalarProperty Name="ID_Esp_Hora" ColumnName="ID_Esp_Hora" />
+          <ScalarProperty Name="ID_Especialista_Cedula" ColumnName="ID_Especialista_Cedula" />
+          <ScalarProperty Name="ID_Horario" ColumnName="ID_Horario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especie">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Especie">
+        <MappingFragment StoreEntitySet="Especie">
+          <ScalarProperty Name="ID_Especie" ColumnName="ID_Especie" />
+          <ScalarProperty Name="Nom_Especie" ColumnName="Nom_Especie" />
+          <ScalarProperty Name="Est_Especie" ColumnName="Est_Especie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Historial_Medico">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Historial_Medico">
+        <MappingFragment StoreEntitySet="Historial_Medico">
+          <ScalarProperty Name="ID_Historial" ColumnName="ID_Historial" />
+          <ScalarProperty Name="Fecha_Historial" ColumnName="Fecha_Historial" />
+          <ScalarProperty Name="Diagnostico" ColumnName="Diagnostico" />
+          <ScalarProperty Name="Tratamiento" ColumnName="Tratamiento" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="ID_Dueño_Cedula" ColumnName="ID_Dueño_Cedula" />
+          <ScalarProperty Name="Est_Historial" ColumnName="Est_Historial" />
+          <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Horario">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Horario">
+        <MappingFragment StoreEntitySet="Horario">
+          <ScalarProperty Name="ID_Horario" ColumnName="ID_Horario" />
+          <ScalarProperty Name="ID_Cita" ColumnName="ID_Cita" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Raza">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Raza">
+        <MappingFragment StoreEntitySet="Raza">
+          <ScalarProperty Name="ID_Raza" ColumnName="ID_Raza" />
+          <ScalarProperty Name="Nombre_Raza" ColumnName="Nombre_Raza" />
+          <ScalarProperty Name="Est_Raza" ColumnName="Est_Raza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicios">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Servicios">
+        <MappingFragment StoreEntitySet="Servicios">
+          <ScalarProperty Name="ID_Servicio" ColumnName="ID_Servicio" />
+          <ScalarProperty Name="Nombre_Serv" ColumnName="Nombre_Serv" />
+          <ScalarProperty Name="Descripcion_Serv" ColumnName="Descripcion_Serv" />
+          <ScalarProperty Name="Est_Serv" ColumnName="Est_Serv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sexo">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.Sexo">
+        <MappingFragment StoreEntitySet="Sexo">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ID_Sexo" ColumnName="ID_Sexo" />
+          <ScalarProperty Name="Sexo1" ColumnName="Sexo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Veterinaria_FinalModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

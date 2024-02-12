@@ -1,0 +1,12 @@
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\bin\Debug\AplicaciónDTO.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\bin\Debug\AplicaciónDTO.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\obj\Debug\AplicaciónDTO.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\obj\Debug\AplicaciónDTO.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\obj\Debug\AplicaciónDTO.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\AplicaciónDTO\obj\Debug\AplicaciónDTO.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\bin\Debug\AplicaciónDTO.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\bin\Debug\AplicaciónDTO.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\obj\Debug\AplicaciónDTO.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\obj\Debug\AplicaciónDTO.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\obj\Debug\AplicaciónDTO.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\AplicaciónDTO\obj\Debug\AplicaciónDTO.pdb

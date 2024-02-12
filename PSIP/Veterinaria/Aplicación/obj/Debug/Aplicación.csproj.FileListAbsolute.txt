@@ -1,0 +1,64 @@
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\obj\Debug\Aplicación.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\obj\Debug\Aplicación.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\Aplicación.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\AccesoDatos.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\EntityFramework.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\AccesoDatos.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\AccesoDatos.dll.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\bin\Debug\EntityFramework.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\obj\Debug\Aplicación.csproj.CopyComplete
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\obj\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Veterinaria_VF\Aplicación\obj\Debug\Aplicación.pdb
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\Aplicación.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\Aplicación.pdb
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\AccesoDatos.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\DominioModelo.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\DominioServicio.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\EntityFramework.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\AccesoDatos.pdb
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\AccesoDatos.dll.config
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\DominioModelo.pdb
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\DominioServicio.pdb
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\bin\Debug\EntityFramework.xml
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\obj\Debug\Aplicación.csproj.AssemblyReference.cache
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\obj\Debug\Aplicación.csproj.CoreCompileInputs.cache
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\obj\Debug\Aplicación.csproj.CopyComplete
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\obj\Debug\Aplicación.dll
+C:\Desarrollo\veterinaria\UI.Windows\Aplicación\obj\Debug\Aplicación.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\Aplicación.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\AccesoDatos.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\DominioModelo.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\DominioServicio.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\EntityFramework.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\AccesoDatos.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\AccesoDatos.dll.config
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\DominioModelo.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\DominioServicio.pdb
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\bin\Debug\EntityFramework.xml
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\obj\Debug\Aplicación.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\obj\Debug\Aplicación.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\obj\Debug\Aplicación.csproj.CopyComplete
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\obj\Debug\Aplicación.dll
+C:\Users\carlo\OneDrive\UISRAEL\6to\Desarrollo\PROYECTO\Proyecto Final\Aplicación\obj\Debug\Aplicación.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\Aplicación.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\Aplicación.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\AccesoDatos.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\DominioServicio.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\EntityFramework.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\AccesoDatos.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\AccesoDatos.dll.config
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\DominioServicio.pdb
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\bin\Debug\EntityFramework.xml
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\obj\Debug\Aplicación.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\obj\Debug\Aplicación.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\obj\Debug\Aplicación.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\obj\Debug\Aplicación.dll
+C:\Users\USUARIO\Desktop\PSIP\Veterinaria\Aplicación\obj\Debug\Aplicación.pdb
