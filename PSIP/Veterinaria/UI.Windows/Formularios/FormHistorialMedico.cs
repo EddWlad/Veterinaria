@@ -97,7 +97,6 @@ namespace UI.Windows.Formularios
                 dtgHistorial.Rows.Add(new object[] {"",item.id_Historial,item.nombre_dueño,item.nombre_mascota,
                 item.fecha,item.diagnostico,item.tratamiento,item.observacion});
             }
-
         }
 
         private void FormHistorialMedico_Load(object sender, EventArgs e)

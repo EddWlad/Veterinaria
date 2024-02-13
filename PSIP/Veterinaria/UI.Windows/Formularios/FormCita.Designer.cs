@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MascotaCB = new System.Windows.Forms.ComboBox();
             this.DueñoCB = new System.Windows.Forms.ComboBox();
             this.Guardar_Especialista = new System.Windows.Forms.Button();
-            this.citaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,22 +42,12 @@
             this.EspecialistaCB = new System.Windows.Forms.ComboBox();
             this.Fecha_CitaTXT = new System.Windows.Forms.TextBox();
             this.HORATXT = new System.Windows.Forms.TextBox();
-
             this.idAnimal = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnselec = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IDCitas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaCita = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDAnimal1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDEspecialistaC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDServicioD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDueño = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.citaBindingSource)).BeginInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,15 +78,6 @@
             this.Guardar_Especialista.Text = "Guardar";
             this.Guardar_Especialista.UseVisualStyleBackColor = true;
             this.Guardar_Especialista.Click += new System.EventHandler(this.Guardar_Especialista_Click);
-            // 
-            // citaBindingSource
-            // 
-            this.citaBindingSource.DataMember = "Cita";
-
-            // 
-            // veterinaria_FinalDataSet2
-            // 
-
             // 
             // label6
             // 
@@ -188,10 +166,6 @@
             this.HORATXT.TabIndex = 61;
             this.HORATXT.TextChanged += new System.EventHandler(this.HORATXT_TextChanged);
             // 
-            // citaTableAdapter
-            // 
-
-            // 
             // idAnimal
             // 
             this.idAnimal.Location = new System.Drawing.Point(55, 145);
@@ -207,7 +181,6 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -224,15 +197,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnselec,
-            this.IDCitas,
-            this.fechaCita,
-            this.iDAnimal1,
-            this.iDEspecialistaC,
-            this.iDServicioD,
-            this.fechaHora,
-            this.iDDueño,
             this.EstadoC});
-            this.dataGridView1.DataSource = this.citaBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(282, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -247,62 +212,6 @@
             this.btnselec.HeaderText = "";
             this.btnselec.Name = "btnselec";
             this.btnselec.ReadOnly = true;
-            // 
-            // IDCitas
-            // 
-            this.IDCitas.DataPropertyName = "ID_Citas";
-            this.IDCitas.FillWeight = 108.4844F;
-            this.IDCitas.HeaderText = "ID Cita";
-            this.IDCitas.Name = "IDCitas";
-            this.IDCitas.ReadOnly = true;
-            // 
-            // fechaCita
-            // 
-            this.fechaCita.DataPropertyName = "Fecha_Cita";
-            this.fechaCita.FillWeight = 108.4844F;
-            this.fechaCita.HeaderText = "Fecha Cita";
-            this.fechaCita.Name = "fechaCita";
-            this.fechaCita.ReadOnly = true;
-            // 
-            // iDAnimal1
-            // 
-            this.iDAnimal1.DataPropertyName = "ID_Animal";
-            this.iDAnimal1.FillWeight = 108.4844F;
-            this.iDAnimal1.HeaderText = "ID Animal";
-            this.iDAnimal1.Name = "iDAnimal1";
-            this.iDAnimal1.ReadOnly = true;
-            // 
-            // iDEspecialistaC
-            // 
-            this.iDEspecialistaC.DataPropertyName = "ID_Especialista_Cedula";
-            this.iDEspecialistaC.FillWeight = 108.4844F;
-            this.iDEspecialistaC.HeaderText = "ID Especialista Cedula";
-            this.iDEspecialistaC.Name = "iDEspecialistaC";
-            this.iDEspecialistaC.ReadOnly = true;
-            // 
-            // iDServicioD
-            // 
-            this.iDServicioD.DataPropertyName = "ID_Servicio";
-            this.iDServicioD.FillWeight = 108.4844F;
-            this.iDServicioD.HeaderText = "ID Servicio";
-            this.iDServicioD.Name = "iDServicioD";
-            this.iDServicioD.ReadOnly = true;
-            // 
-            // fechaHora
-            // 
-            this.fechaHora.DataPropertyName = "Fecha_Hora";
-            this.fechaHora.FillWeight = 108.4844F;
-            this.fechaHora.HeaderText = "Fecha Hora";
-            this.fechaHora.Name = "fechaHora";
-            this.fechaHora.ReadOnly = true;
-            // 
-            // iDDueño
-            // 
-            this.iDDueño.DataPropertyName = "ID_Dueño_Cedula";
-            this.iDDueño.FillWeight = 108.4844F;
-            this.iDDueño.HeaderText = "Dueño Cedula";
-            this.iDDueño.Name = "iDDueño";
-            this.iDDueño.ReadOnly = true;
             // 
             // EstadoC
             // 
@@ -358,8 +267,6 @@
             this.Name = "FormCita";
             this.Text = "FormCita";
             this.Load += new System.EventHandler(this.FormCita_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.citaBindingSource)).EndInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -380,8 +287,6 @@
         private System.Windows.Forms.ComboBox EspecialistaCB;
         private System.Windows.Forms.TextBox Fecha_CitaTXT;
         private System.Windows.Forms.TextBox HORATXT;
-
-        private System.Windows.Forms.BindingSource citaBindingSource;
 
         private System.Windows.Forms.TextBox idAnimal;
         private System.Windows.Forms.DataGridView dataGridView1;

@@ -133,9 +133,8 @@ namespace UI.Windows.Formularios
         }
         private void ListarDueños()
         {
-            //var nombredueño = dueñocontrolador.ListarDueño().Select(x => new DueñoCBVistaModelo { ID_Dueño_Cedula = x.ID_Dueño_Cedula, Nombre_Dueño = $"{x.Nombre_Dueño} {x.Apellido_Dueño}" }).ToList();
 
-            //DueñoCB.DataSource = nombredueño;
+            DueñoCB.DataSource = dueñocontrolador.ListarDueñoActivos();
             DueñoCB.DisplayMember = "Nombre_Dueño";
             DueñoCB.ValueMember = "ID_Dueño_Cedula";
         }
@@ -143,8 +142,8 @@ namespace UI.Windows.Formularios
         {
 
             MascotaCB.DataSource = animalcontrolador.ListarAnimalesActivos();
-            MascotaCB.DisplayMember = "Nombre";
-            MascotaCB.ValueMember = "ID_Animal";
+            MascotaCB.DisplayMember = "nombre_mascota";
+            MascotaCB.ValueMember = "id_Animal";
         }
         private void ListarServicios()
         {
@@ -156,11 +155,11 @@ namespace UI.Windows.Formularios
         private void ListarEspecialista()
         {
 
-            var nombreespecialista = especialistaControlador.ListarEspecialista().Select(x => new EspecialistaCBVistaModelo { ID_Especialista_Cedula = x.ID_Especialista_Cedula, Nombre_Espe = $"{x.Nombre_Espe} {x.Apellido_Espe}" }).ToList();
+            //var nombreespecialista = especialistaControlador.ListarEspecialista().Select(x => new EspecialistaCBVistaModelo { ID_Especialista_Cedula = x.ID_Especialista_Cedula, Nombre_Espe = $"{x.Nombre_Espe} {x.Apellido_Espe}" }).ToList();
 
-            EspecialistaCB.DataSource = nombreespecialista;
+            EspecialistaCB.DataSource = especialistaControlador.ListarEspecialistaActivos();
             EspecialistaCB.DisplayMember = "Nombre_Espe";
-            EspecialistaCB.ValueMember = "ID_Especialista_Cedula";
+            EspecialistaCB.ValueMember = "id_especialista_cedula";
         }
         private void FormCita_Load(object sender, EventArgs e)
         {
@@ -168,7 +167,6 @@ namespace UI.Windows.Formularios
 
             dataGridView1.DataSource = citaControlador.ListarCitaActivos();
             ListarDueños();
-           
             ListarAnimales();
             ListarServicios();
             ListarEspecialista();

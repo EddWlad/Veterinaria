@@ -30,7 +30,7 @@ namespace UI.Windows.Controladores
                 EspecialistaDB.Especialización_Espe = EspecialistaVM.Especialización_Espe;
                 EspecialistaDB.ID_Servicio = EspecialistaVM.ID_Servicio;
                 EspecialistaDB.Est_Espe = EspecialistaVM.Est_Espe;
-                this.ServicioEspecialista.InsertarEspecialista(EspecialistaDB);
+                ServicioEspecialista.InsertarEspecialista(EspecialistaDB);
                 return true;
             }
             catch (Exception)
@@ -38,18 +38,9 @@ namespace UI.Windows.Controladores
                 return false;
             }
         }
-        public List<Especialista> ListarEspecialista()
+        public IEnumerable<EspecialistaServiciosEspecilista> EspecialistasActivos()
         {
-            List<Especialista> especialista = new List<Especialista>();
-            try
-            {
-                especialista = this.ServicioEspecialista.ListarEspecialista().ToList();
-            }
-            catch (Exception)
-            {
-
-            }
-            return especialista;
+            return ServicioEspecialista.EspecialistasActivos();
         }
         public IEnumerable<Especialista> ListarEspecialistaActivos()
         {
@@ -75,6 +66,10 @@ namespace UI.Windows.Controladores
             {
                 return false;
             }
+        }
+        public bool EliminarEspecialista(string id)
+        {
+            return ServicioEspecialista.EliminarEspecialista(id);
         }
     }
 }

@@ -22,3 +22,9 @@ C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.
 C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.dll
 C:\Users\USUARIO\Desktop\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\bin\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\bin\Debug\DominioModelo.pdb
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.dll
+C:\Users\USUARIO\Desktop\VeterinariaGlomoure\Veterinaria\PSIP\Veterinaria\DominioModelo\obj\Debug\DominioModelo.pdb

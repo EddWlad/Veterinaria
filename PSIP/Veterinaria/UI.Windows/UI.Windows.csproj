@@ -228,6 +228,7 @@
     <None Include="Resources\user-check-regular-24.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\street-view-regular-24.png" />
     <None Include="Resources\clipboard-regular-24.png" />
     <None Include="Resources\bone-regular-24.png" />
     <Content Include="Resources\check-circle-solid-24.png" />

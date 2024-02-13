@@ -38,19 +38,6 @@ namespace UI.Windows.Controladores
             }
         }
 
-        public List<Historial_Medico> ListarHistorial_Medico()
-        {
-            List<Historial_Medico> historialMedico = new List<Historial_Medico>();
-            try
-            {
-                historialMedico = this.ServicioHistorialMedico.ListarHistorial_Medico().ToList();
-            }
-            catch (Exception)
-            {
-
-            }
-            return historialMedico;
-        }
         public IEnumerable<Historial_Medico> ListarHistorial_MedicoActivos()
         {
             return ServicioHistorialMedico.ListarHistorial_MedicoActivos();

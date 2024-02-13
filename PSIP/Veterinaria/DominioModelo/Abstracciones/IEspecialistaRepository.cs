@@ -10,5 +10,7 @@ namespace DominioModelo.Abstracciones
     public interface IEspecialistaRepository : IBaseRepository<Especialista>
     {
         IEnumerable<Especialista> ListarEspecialistaActivos();
+        IEnumerable<EspecialistaServiciosEspecilista> EspecialistaActivos();
+        bool ElminarEspecialista(string id);
     }
 }

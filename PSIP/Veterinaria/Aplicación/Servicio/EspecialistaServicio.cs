@@ -35,5 +35,13 @@ namespace Aplicación.Servicio
         {
             return this.especialistaRepository.ListarEspecialistaActivos();
         }
+        public IEnumerable<EspecialistaServiciosEspecilista> EspecialistasActivos()
+        {
+            return this.especialistaRepository.EspecialistaActivos();
+        }
+        public bool EliminarEspecialista(String id)
+        {
+            return this.especialistaRepository.ElminarEspecialista(id);
+        }
     }
 }

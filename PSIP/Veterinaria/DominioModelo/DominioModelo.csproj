@@ -66,6 +66,7 @@
     <Compile Include="Entidades\Especialista.cs">
       <DependentUpon>Veterinaria.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\EspecialistaServiciosEspecilista.cs" />
     <Compile Include="Entidades\Especialista_Horario.cs">
       <DependentUpon>Veterinaria.tt</DependentUpon>
     </Compile>
